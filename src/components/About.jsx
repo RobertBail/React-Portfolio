@@ -1,6 +1,6 @@
 export default function About() {
     return (
-      <div class="about">
+      <div className="About">
         <h1>About Me</h1>
         <p>
         I'm Robert Bailey. I'm 35. I live in Hampstead Gardens, SA. I have taken part in the edX/University of Adelaide 
