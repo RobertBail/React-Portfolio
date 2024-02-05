@@ -11,28 +11,44 @@ import Contact from './components/Contact';
 //import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
-  const [currentPage, handlePageChange] = useState("About");
-
-  const renderPage = () => {
-    switch(currentPage) {
-      case "About":
-        return <About />;
-      case "Portfolio":
-        return <Portfolio />;
-      case "Contact":
-        return <Contact />;
-      case "Resume":
-        return <Resume />;
-      default: 
-        return <About />;
-    }
-  };
- 
+  const [pages] = useState([
+        { name : 'About' },
+        { name: 'Portfolio' },
+        { name: 'Resume' },
+        { name: 'Contact' }
+    ]);
+  
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+    
+  //const renderPage = () => {
+    //switch(currentPage) {
+      //case "About":
+       // return <About />;
+      //case "Portfolio":
+       // return <Portfolio />;
+      //case "Contact":
+     //   return <Contact />;
+      //case "Resume":
+     //   return <Resume />;
+    //  default: 
+     //   return <About />;
+   // }
+ // };
+ //<main className="mx-3">{renderPage()}</main>
   return (
     <div className = "portfolio-app">
-      <Header/>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      <main className="mx-3">{renderPage()}</main>
+      <Header  />
+      
+      <NavTabs pages={pages}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+      />
+       <main>
+                {currentPage.name === 'About' && <About />}
+                {currentPage.name === 'Portfolio' && <Portfolio />}
+                {currentPage.name === 'Resume' && <Resume />}
+                {currentPage.name === 'Contact' && <Contact />}
+            </main>
       
       <Footer />
     </div>
