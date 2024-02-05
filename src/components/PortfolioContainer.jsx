@@ -9,7 +9,7 @@ import Contact from './Contact';
 import './App.css';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -29,10 +29,8 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
  return (
-  <div >
-    
+  <div >   
     <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-   
       <main className="app-items" >{renderPage()}</main>
     </div>
  );
