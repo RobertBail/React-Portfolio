@@ -2,7 +2,8 @@
 
 const styles = {
   footerStyle: {
-    background: 'green',
+    background: 'yellow',
+    height: '40px',
   },
   footertextStyle: {
     fontSize: '30px',

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+//import { NavTabs } from "react-router-dom";
 //import Home from './pages/Home';
 import NavTabs from './NavTabs';
 import About from './About';
@@ -15,22 +16,22 @@ export default function PortfolioContainer() {
       return <About />;
     }
     if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    }
+    return <Portfolio />;
+   }
     if (currentPage === 'Resume') {
-      return <Resume />;
-    }
-    return <Contact />;
-  };
+     return <Resume />;
+   }
+  return <Contact />;
+   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
-  return (
-    <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
+ return (
+  <div>
+    {/* We are passing the currentPage from state and the function to update it */}
+    <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+    {/* Here we are calling the renderPage method which will return a component  */}
       <main className="mx-3">{renderPage()}</main>
     </div>
-  );
+ );
 }

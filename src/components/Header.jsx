@@ -2,7 +2,7 @@
 
 const styles = {
   headerStyle: {
-    background: 'green',
+    background: 'yellow',
   },
   headingStyle: {
     fontSize: '50px',
