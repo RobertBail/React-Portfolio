@@ -6,6 +6,7 @@ const styles = {
   },
   headingStyle: {
     fontSize: '50px',
+    marginLeft: '10px'
   },
 };
 

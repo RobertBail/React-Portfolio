@@ -7,6 +7,7 @@ const styles = {
   },
   footertextStyle: {
     fontSize: '30px',
+    marginLeft: '10px'
   },
   
 };

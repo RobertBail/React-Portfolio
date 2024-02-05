@@ -1,7 +1,9 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #a0ffcf;
-
+  color:#01051b;
+  background-color: #fff;
+  display: flexbox;
+  justify-content: center;
 }
 
   
