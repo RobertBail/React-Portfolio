@@ -4,6 +4,15 @@
   background-color: #fff;
   display: flexbox;
   justify-content: center;
+  
+
+/* CSS HSL https://coolors.co/336699-86bbd8-2f4858-9ee493-daf7dc*/
+--lapis-lazuli: hsla(210, 50%, 40%, 1);
+--carolina-blue: hsla(201, 51%, 69%, 1);
+--charcoal: hsla(203, 30%, 26%, 1);
+--light-green: hsla(112, 60%, 74%, 1);
+--nyanza: hsla(124, 64%, 91%, 1);
+
 }
 
   
