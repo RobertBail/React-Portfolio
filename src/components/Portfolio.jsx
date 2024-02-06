@@ -5,7 +5,7 @@ import img4 from "../assets/04.png";
 import img5 from "../assets/05.png";
 import img6 from "../assets/06.png";
 import './Portfolio.css';
-
+//I tried "a single Project component that’s used multiple times in the Portfolio section" early on but it didn't really work for me, or couldn't see how so much.
 export default function Portfolio() {
     return (
       <div className="Portfolio">

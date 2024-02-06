@@ -14,7 +14,7 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Welcome!</h1>
+      <h1 style={styles.headingStyle}>Rob Bailey's Portfolio</h1>
     </header>
   );
 }
