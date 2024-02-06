@@ -3,6 +3,7 @@
 const styles = {
   headerStyle: {
     background: 'yellow',
+    height:'70px'
   },
   headingStyle: {
     fontSize: '50px',

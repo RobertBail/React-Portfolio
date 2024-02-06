@@ -1,3 +1,4 @@
+import './Contact.css';
 export default function Contact() {
     return (
       <div className="Contact">
@@ -8,15 +9,7 @@ export default function Contact() {
           <div className="row text-center gx-0 pb-5">
             <div className="col-md-3"></div>
             <div className="col-md-6">
-              <h1>
-                <img src={icon1} alt="" />
-                GET IN TOUCH
-                <img src={icon2} alt="" />
-              </h1>
-              <p>
-                Fill the form below or write us .We will help you as soon as
-                possible.
-              </p>
+             
             </div>
             <div className="col-md-3"></div>
           </div>
@@ -27,15 +20,15 @@ export default function Contact() {
                 <div className="col-lg-6 gx-0">
                   <div className="contact_fm_1" data-aos="fade-left">
                     <i className="fa-solid fa-phone"></i>
-                    <h4>Phone No</h4>
-                    <h6>+88 01682 825 123</h6>
+                    <h4>Phone No.</h4>
+                    <h6>0422519193</h6>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="contact_fm_1" data-aos="fade-left">
                     <i className="fa-solid fa-envelope"></i>
                     <h4>Email</h4>
-                    <h6>hi@waleedcodes.com</h6>
+                    <h6>r.bail@hotmail.com</h6>
                   </div>
                 </div>
               </div>
@@ -44,10 +37,10 @@ export default function Contact() {
                 <div className="col-lg-12">
                   <div className="contact_fm_1">
                     <i className="fa-solid fa-location-dot"></i>
-                    <h4>Address</h4>
-                    <h6>Abbottabad, Pakistan</h6>
+                    <h4>Located In:</h4>
+                    <h6>Adelaide, South Australia</h6>
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105627.97328102255!2d73.08828448657466!3d34.17513477655343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de3111557ac517%3A0x6e59a635b12e952c!2sAbbottabad%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1688829299558!5m2!1sen!2s"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418336.63960122806!2d138.2815111742472!3d-35.000321384801715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab735c7c526b33f%3A0x4033654628ec640!2sAdelaide%20SA!5e0!3m2!1sen!2sau!4v1707237763003!5m2!1sen!2sau"
                       allowFullScreen=""
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -129,7 +122,7 @@ export default function Contact() {
                       required
                     ></textarea>
                   </div>
-                  <button type="submit" className="contact_btn">
+                  <button type="submit" className="btn btn-info">
                     Let's Talk
                   </button>
                 </form>
